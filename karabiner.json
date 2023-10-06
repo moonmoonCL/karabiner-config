@@ -51,6 +51,26 @@
             ]
           },
           {
+            "description": "Map Right Shift to Control + Space",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "right_shift",
+                  "modifiers": {
+                    "optional": ["any"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "spacebar",
+                    "modifiers": ["left_control"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "当单独按下左 Control 键时，将其映射为 Escape 键（escape）。当同时按下其他修饰键（如 Shift、Option 等）时，保持左 Control 键不变。",
             "manipulators": [
               {
