@@ -18,7 +18,40 @@
         },
         "rules": [
           {
-            "description": "t",
+            "description": "right-command + ,. = home,end",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "comma",
+                  "modifiers": {
+                    "mandatory": ["right_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "home"
+                  }
+                ]
+              },
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "period",
+                  "modifiers": {
+                    "mandatory": ["right_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "end"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "当单独按下左 Control 键时，将其映射为 Escape 键（escape）。当同时按下其他修饰键（如 Shift、Option 等）时，保持左 Control 键不变。",
             "manipulators": [
               {
                 "from": {
